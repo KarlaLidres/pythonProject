@@ -23,10 +23,10 @@ intercept = model.intercept_
 print("Slope:", slope)
 print("Intercept:", intercept)
 # Predict for the next 3 years
-next_years = [[year] for year in range(2016, 2019)]
+next_years = [[year] for year in range(2016, 2023)]
 predicted_sales = model.predict(next_years)
 
-for year, sales in zip(range(2016, 2019), predicted_sales):
+for year, sales in zip(range(2016, 2023), predicted_sales):
     print("Predicted sales for {}: {:.2f}".format(year, sales))
 import matplotlib.pyplot as plt
 
